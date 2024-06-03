@@ -2,7 +2,7 @@
 <div class="main">
 <div style="clear:both;"></div>
 <header id="title-block-header">
-<h1 class="title">Fast-Paced Multiplayer: Sample Code and Live Demo</h1>
+<h1 class="title">Prediction/Reconciliation and Interpolation: Demo</h1>
 
 <style>
 canvas {
@@ -10,7 +10,7 @@ canvas {
     padding:0;
     background: lightgray;
 }</style>
-<p>This is a sample implementation of a client-server architecture demonstrating the main concepts explained in my <a href="https://gabrielgambetta.com/client-server-game-architecture.html">Fast-Paced Multiplayer</a> series of articles. It won’t make much sense unless you’ve read the articles first.</p>
+<p>This is a sample implementation of a client-server architecture demonstrating the main concepts of prediction. <br> Move Player 1 with arrow keys and Player 2 with WASD.</p>
 <div style="border: 5px solid blue; padding: 15px;">
 <p><b>Player 1 view</b> - move with LEFT and RIGHT arrow keys<br> Lag = <input id="player1_lag" onchange="updateParameters();" size="5" type="text" value="250">ms · <input id="player1_prediction" onchange="updateParameters();" type="checkbox">Prediction · <input id="player1_reconciliation" onchange="updateParameters();" type="checkbox">Reconciliation · <input id="player1_interpolation" onchange="updateParameters();" type="checkbox">Interpolation</p>
 <canvas height="75" id="player1_canvas" width="920">
